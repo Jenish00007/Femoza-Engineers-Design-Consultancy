@@ -400,6 +400,49 @@ body {
     pointer-events: all !important;
     visibility: visible !important;
   }
+  
+  /* Ensure company name is visible on mobile */
+  .logo-text {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    max-width: 150px !important;
+    font-size: 0.8rem !important;
+  }
+  
+  /* Mobile social links styling */
+  .social-links {
+    display: flex !important;
+    gap: 0.75rem !important;
+    justify-content: center !important;
+    margin: 1rem 0 !important;
+    flex-wrap: wrap !important;
+  }
+  
+  .social-link {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 45px !important;
+    height: 45px !important;
+    background: var(--bg-card) !important;
+    border: 1px solid var(--border-primary) !important;
+    border-radius: 12px !important;
+    color: var(--text-secondary) !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease !important;
+    font-size: 1rem !important;
+    position: relative !important;
+    overflow: hidden !important;
+  }
+  
+  .social-link:hover {
+    background: var(--orange-primary) !important;
+    color: var(--text-on-accent) !important;
+    transform: translateY(-2px) !important;
+    border-color: var(--orange-primary) !important;
+    box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3) !important;
+  }
 }
 
 /* Desktop-specific rules to ensure navigation visibility */
@@ -1763,9 +1806,11 @@ body {
   }
   
   .logo-text {
-    font-size: 0.9rem;
-    display: block;
-    max-width: 180px;
+    font-size: 0.8rem;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    max-width: 150px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -1775,6 +1820,9 @@ body {
   .logo-container {
     gap: 0.75rem;
     padding: 0.25rem;
+    display: flex !important;
+    align-items: center !important;
+    visibility: visible !important;
   }
   
   .nav-links {
@@ -1826,6 +1874,40 @@ body {
   
   .nav-cta {
     display: none;
+  }
+  
+  /* Mobile social links styling */
+  .social-links {
+    display: flex !important;
+    gap: 0.75rem !important;
+    justify-content: center !important;
+    margin: 1rem 0 !important;
+    flex-wrap: wrap !important;
+  }
+  
+  .social-link {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 45px !important;
+    height: 45px !important;
+    background: var(--bg-card) !important;
+    border: 1px solid var(--border-primary) !important;
+    border-radius: 12px !important;
+    color: var(--text-secondary) !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease !important;
+    font-size: 1rem !important;
+    position: relative !important;
+    overflow: hidden !important;
+  }
+  
+  .social-link:hover {
+    background: var(--orange-primary) !important;
+    color: var(--text-on-accent) !important;
+    transform: translateY(-2px) !important;
+    border-color: var(--orange-primary) !important;
+    box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3) !important;
   }
   
   .hero {

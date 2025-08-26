@@ -26,22 +26,57 @@ const AboutPage = () => {
       </section>
 
       {/* Mission Section */}
-      <section className="section">
-        <div className="about-content">
-          <div className="about-text">
-            <h3>Our Mission</h3>
-            <p>
+      <section className="section" style={{ 
+        padding: '3rem 1rem',
+        maxWidth: '100%'
+      }}>
+        <div className="about-content" style={{ 
+          display: 'flex', 
+          flexDirection: 'column', 
+          gap: '2rem',
+          alignItems: 'center',
+          textAlign: 'center',
+          maxWidth: '800px',
+          margin: '0 auto'
+        }}>
+          <div className="about-text" style={{ 
+            maxWidth: '100%',
+            width: '100%'
+          }}>
+            <h3 style={{ 
+              color: 'var(--orange-primary)', 
+              marginBottom: '1.5rem',
+              fontSize: 'clamp(1.5rem, 5vw, 1.8rem)',
+              textAlign: 'center',
+              fontWeight: '600',
+              lineHeight: '1.3'
+            }}>Our Mission</h3>
+            <p style={{ 
+              fontSize: 'clamp(1rem, 3vw, 1.1rem)',
+              lineHeight: '1.8',
+              marginBottom: '1rem',
+              textAlign: 'left',
+              maxWidth: '100%'
+            }}>
               At Femoza Engineers & Design Consultancy, we are dedicated to revolutionizing the construction industry
               through cutting-edge BIM technology and innovative design solutions. Our team of experts combines
               technical expertise with creative problem-solving to deliver projects that exceed expectations.
             </p>
-            <p style={{ marginTop: '1rem' }}>
+            <p style={{ 
+              marginTop: '1rem',
+              fontSize: 'clamp(1rem, 3vw, 1.1rem)',
+              lineHeight: '1.8',
+              textAlign: 'left',
+              maxWidth: '100%'
+            }}>
               We believe that every construction project, regardless of size or complexity, deserves the precision
               and clarity that advanced BIM technology can provide. Our team of experienced professionals works
               tirelessly to ensure that our clients can focus on what they do best – building the future.
             </p>
           </div>
-          <div className="about-image">
+          <div className="about-image" style={{ 
+            display: 'none'
+          }}>
             [Company Image Placeholder]
           </div>
         </div>

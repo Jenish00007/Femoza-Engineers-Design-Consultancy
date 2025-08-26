@@ -93,6 +93,7 @@ function App() {
             onClick={toggleMenu} 
             aria-label="Toggle mobile menu"
             aria-expanded={isMenuOpen}
+            style={{ display: 'none' }}
           >
             {isMenuOpen ? '✕' : '☰'}
           </button>
