@@ -29,7 +29,7 @@ const ContactPage = () => {
   };
 
   return (
-    <main>
+    <main style={{ background: '#FFFFFF' }}>
       {/* Intro */}
       <section className="section" style={{ paddingTop: '5rem', paddingBottom: '2rem' }}>
         <h2 className="section-title">Let’s Build Something Great Together</h2>
