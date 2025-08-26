@@ -155,16 +155,7 @@ function App() {
                 <p>📧 hello@fedc.in</p>
               </div>
               
-              <div className="newsletter">
-                <h4 className="footer-title">Let's Stay In Touch!</h4>
-                <input 
-                  type="email" 
-                  className="newsletter-input" 
-                  placeholder="Enter your email address"
-                  aria-label="Email for newsletter"
-                />
-                <button className="newsletter-button">Sign Up</button>
-              </div>
+
               
               <div className="social-links">
                 <a href="#" className="social-link" aria-label="Facebook">

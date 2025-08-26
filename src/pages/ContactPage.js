@@ -58,14 +58,18 @@ const ContactPage = () => {
               <span>📞</span>
               <div>
                 <strong>Phone</strong><br />
-                +91 9108101524
+                <a href="tel:+919108101524">
+                  +91 9108101524
+                </a>
               </div>
             </div>
             <div className="contact-item">
               <span>📧</span>
               <div>
                 <strong>Email</strong><br />
-                hello@fedc.in
+                <a href="mailto:hello@fedc.in">
+                  hello@fedc.in
+                </a>
               </div>
             </div>
 
