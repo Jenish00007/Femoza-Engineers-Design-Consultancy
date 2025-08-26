@@ -225,7 +225,9 @@ const HomePage = () => {
                 <label htmlFor="message">Message</label>
                 <textarea id="message" name="message" rows="5" required placeholder="Tell us about your project requirements..."></textarea>
               </div>
-              <button type="submit" className="btn btn-primary">Send Message</button>
+              <div style={{ textAlign: 'center' }}>
+                <button type="submit" className="btn btn-primary">Send Message</button>
+              </div>
             </form>
           </div>
         </div>

@@ -171,9 +171,8 @@ const ServicesPage = () => {
             Our commitment to excellence, innovation, and client success drives everything we do.
             Let us help you transform your construction projects with the power of advanced BIM technology.
           </p>
-          <div className="cta-buttons">
+          <div className="cta-buttons" style={{ justifyContent: 'center' }}>
             <a href="/#contact" className="btn btn-primary">Start Your Project</a>
-            <a href="mailto:info@empireconstructionvis.com" className="btn btn-secondary">Get Quote</a>
           </div>
         </div>
       </section>

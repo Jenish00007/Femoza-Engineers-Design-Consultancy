@@ -189,7 +189,7 @@ const ProjectsPage = () => {
             Explore our portfolio to see how Femoza Engineers & Design Consultancy has been shaping smarter construction across industries.<br/><br/>
             Each project represents our commitment to excellence, innovation, and delivering solutions that exceed expectations.
           </p>
-          <div className="cta-buttons">
+          <div className="cta-buttons" style={{ justifyContent: 'center' }}>
             <a href="/#contact" className="btn btn-primary">Start Your Project</a>
             <a href="/services" className="btn btn-secondary">View Our Services</a>
           </div>
