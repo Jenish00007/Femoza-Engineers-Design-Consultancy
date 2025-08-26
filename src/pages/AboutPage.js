@@ -99,7 +99,7 @@ const AboutPage = () => {
             With Femoza Engineers & Design Consultancy, you don't just build — you build smarter.
             <strong style={{ color: 'var(--orange-primary)' }}> Creating Solutions. Shaping Futures.</strong>
           </p>
-          <div className="cta-buttons">
+          <div className="cta-buttons" style={{ justifyContent: 'center' }}>
             <a href="#contact" className="btn btn-primary">Work With Us</a>
             <a href="mailto:info@empireconstructionvis.com" className="btn btn-secondary">Get In Touch</a>
           </div>

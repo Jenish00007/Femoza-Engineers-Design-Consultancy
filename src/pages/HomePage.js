@@ -168,7 +168,7 @@ const HomePage = () => {
             Whether you're planning a residential complex, a commercial space, or major infrastructure, 
             we provide the clarity and precision you need to succeed. Let's discuss your project and build a smarter future together.
           </p>
-          <div className="cta-buttons">
+          <div className="cta-buttons" style={{ justifyContent: 'center' }}>
             <a href="#contact" className="btn btn-primary">Contact Us Today</a>
             <Link to="/projects" className="btn btn-secondary">View Projects</Link>
           </div>
