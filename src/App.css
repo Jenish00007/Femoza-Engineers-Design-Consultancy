@@ -1026,6 +1026,25 @@ body {
   transform: translateX(5px);
 }
 
+/* Email link styling */
+.contact-item a[href="/contact"],
+.contact-item a[href="/contact"]:visited,
+.footer-contact a[href="/contact"],
+.footer-contact a[href="/contact"]:visited {
+  color: var(--orange-primary);
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.contact-item a[href="/contact"]:hover,
+.footer-contact a[href="/contact"]:hover {
+  color: var(--orange-secondary);
+  border-bottom-color: var(--orange-secondary);
+  transform: translateX(5px);
+}
+
 /* Forms */
 .contact-form {
   background: var(--bg-card);

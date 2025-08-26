@@ -185,7 +185,7 @@ const HomePage = () => {
               <span>📧</span>
               <div>
                 <strong>Email</strong><br/>
-                hello@fedc.in
+                <Link to="/contact">hello@fedc.in</Link>
               </div>
             </div>
             <div className="contact-item">

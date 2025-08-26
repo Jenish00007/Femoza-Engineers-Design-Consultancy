@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react';
+import { Link } from 'react-router-dom';
 import '../App.css';
 import emailjs from '@emailjs/browser';
 
@@ -67,9 +68,9 @@ const ContactPage = () => {
               <span>📧</span>
               <div>
                 <strong>Email</strong><br />
-                <a href="mailto:hello@fedc.in">
+                <Link to="/contact">
                   hello@fedc.in
-                </a>
+                </Link>
               </div>
             </div>
 

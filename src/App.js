@@ -153,7 +153,7 @@ function App() {
                     Building, Kankanady, Mangalore-575002<br/>
                     Karnataka, India</p>
                 <p>📞 +91 9108101524</p>
-                <p>📧 hello@fedc.in</p>
+                <p>📧 <Link to="/contact" onClick={handleNavigate}>hello@fedc.in</Link></p>
               </div>
               
 

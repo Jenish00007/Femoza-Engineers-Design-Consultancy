@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../App.css';
 import aboutUsImage from '../assets/about_us.png';
 
@@ -136,7 +137,7 @@ const AboutPage = () => {
           </p>
           <div className="cta-buttons" style={{ justifyContent: 'center' }}>
             <a href="#contact" className="btn btn-primary">Work With Us</a>
-            <a href="mailto:info@empireconstructionvis.com" className="btn btn-secondary">Get In Touch</a>
+            <Link to="/contact" className="btn btn-secondary">Get In Touch</Link>
           </div>
         </div>
       </section>
