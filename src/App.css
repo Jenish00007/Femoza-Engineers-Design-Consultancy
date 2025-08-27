@@ -1251,11 +1251,8 @@ body {
 
 /* Social media icons responsive improvements */
 @media (max-width: 768px) {
-  .social-links {
-    gap: 0.75rem;
-    justify-content: center;
-    margin: 1rem 0;
-    flex-wrap: wrap;
+  .social-links-contact-page {
+    display: none !important; /* Hide social links on mobile with high specificity */
   }
   
   .social-link {
