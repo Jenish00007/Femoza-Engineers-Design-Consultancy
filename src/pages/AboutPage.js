@@ -10,7 +10,7 @@ const AboutPage = () => {
         <div className="hero-content">
           <div className="hero-eyebrow">
             <span className="eyebrow-line"></span>
-            <span>About Empire</span>
+            <span>About Femoza</span>
             <span className="eyebrow-line"></span>
           </div>
           <h1 className="hero-title">
@@ -51,7 +51,7 @@ const AboutPage = () => {
               textAlign: 'center',
               fontWeight: '600',
               lineHeight: '1.3'
-            }}>Our Mission</h3>
+            }}>Let’s Know About Us</h3>
             <p style={{ 
               fontSize: 'clamp(1rem, 3vw, 1.1rem)',
               lineHeight: '1.8',
@@ -59,20 +59,8 @@ const AboutPage = () => {
               textAlign: 'left',
               maxWidth: '100%'
             }}>
-              At Femoza Engineers & Design Consultancy, we are dedicated to revolutionizing the construction industry
-              through cutting-edge BIM technology and innovative design solutions. Our team of experts combines
-              technical expertise with creative problem-solving to deliver projects that exceed expectations.
-            </p>
-            <p style={{ 
-              marginTop: '1rem',
-              fontSize: 'clamp(1rem, 3vw, 1.1rem)',
-              lineHeight: '1.8',
-              textAlign: 'left',
-              maxWidth: '100%'
-            }}>
-              We believe that every construction project, regardless of size or complexity, deserves the precision
-              and clarity that advanced BIM technology can provide. Our team of experienced professionals works
-              tirelessly to ensure that our clients can focus on what they do best – building the future.
+              Our team’s experience of having executed more than 20 Projects, including the complete 2D, 3D, BOM and engineering deliverables like P&ID, Piping Isometrics, Pipeline flow line drawings, 3D Modeling and As-Built Projects for the major customers in India and abroad, including Laser Scan Point Cloud Projects.<br></br><br></br>
+              We have owned all the necessary CAD software, AutoCAD, REVIT, E3D, MicroStation, MS Office, CAD /CAM/ Plant Engineering Software. Complete with an FTP Server with a firewall and dedicated Internet facilities for communication needs.
             </p>
           </div>
           <div className="about-image" style={{ 
@@ -136,7 +124,6 @@ const AboutPage = () => {
             <strong style={{ color: 'var(--orange-primary)' }}> Creating Solutions. Shaping Futures.</strong>
           </p>
           <div className="cta-buttons" style={{ justifyContent: 'center' }}>
-            <a href="#contact" className="btn btn-primary">Work With Us</a>
             <Link to="/contact" className="btn btn-secondary">Get In Touch</Link>
           </div>
         </div>

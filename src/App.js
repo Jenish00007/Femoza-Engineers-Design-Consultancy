@@ -148,11 +148,29 @@ function App() {
             <div className="footer-col">
               <div className="footer-contact">
                 <h4 className="footer-title">Contact Info</h4>
-                <p>📍Door No: 25-2-124/52,Vishaws Crown
+                <p style={{ display: 'flex', alignItems: 'flex-start', gap: '0.5rem' }}>
+                  <svg fill="#AD1E00" height="16" width="16" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style={{ flexShrink: 0, marginTop: '0.2rem' }}>
+                    <path d="M256,0C149.3,0,64,85.3,64,192c0,36.9,11,65.4,30.1,94.3l141.7,215v0c4.3,6.5,11.7,10.7,20.2,10.7c8.5,0,16-4.3,20.2-10.7
+	l141.7-215C437,257.4,448,228.9,448,192C448,85.3,362.7,0,256,0z M256,298.6c-58.9,0-106.7-47.8-106.7-106.8
+	c0-59,47.8-106.8,106.7-106.8c58.9,0,106.7,47.8,106.7,106.8C362.7,250.8,314.9,298.6,256,298.6z"/>
+                  </svg>
+                  <span>
+                    Door No: 25-2-124/52,Vishaws Crown
                     Building, Kankanady, Mangalore-575002<br/>
-                    Karnataka, India</p>
+                    Karnataka, India
+                  </span>
+                </p>
                 <p>📞 +91 9108101524</p>
-                <p>📧 <Link to="/contact" onClick={handleNavigate}>hello@fedc.in</Link></p>
+                <p style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 48 48" style={{ flexShrink: 0 }}>
+                    <path fill="#4caf50" d="M45,16.2l-5,2.75l-5,4.75L35,40h7c1.657,0,3-1.343,3-3V16.2z"></path>
+                    <path fill="#1e88e5" d="M3,16.2l3.614,1.71L13,23.7V40H6c-1.657,0,3-1.343,3-3V16.2z"></path>
+                    <polygon fill="#e53935" points="35,11.2 24,19.45 13,11.2 12,17 13,23.7 24,31.95 35,23.7 36,17"></polygon>
+                    <path fill="#c62828" d="M3,12.298V16.2l10,7.5V11.2L9.876,8.859C9.132,8.301,8.228,8,7.298,8h0C4.924,8,3,9.924,3,12.298z"></path>
+                    <path fill="#fbc02d" d="M45,12.298V16.2l-10,7.5V11.2l3.124-2.341C38.868,8.301,39.772,8,40.702,8h0 C43.076,8,45,9.924,45,12.298z"></path>
+                  </svg>
+                  <Link to="/contact" onClick={handleNavigate}>hello@fedc.in</Link>
+                </p>
               </div>
               
 
