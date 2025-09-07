@@ -94,7 +94,9 @@ function App() {
             aria-label="Toggle mobile menu"
             aria-expanded={isMenuOpen}
           >
-            {isMenuOpen ? '✕' : '☰'}
+            <span className="hamburger-line"></span>
+            <span className="hamburger-line"></span>
+            <span className="hamburger-line"></span>
           </button>
         </nav>
       </header>

@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import '../App.css';
-import heroVideo from '../assets/Blue Modern House Review Video.mp4';
+import heroVideo from '../assets/service_video.mp4';
 import { Link } from 'react-router-dom';
 
 // Import service images
