@@ -98,7 +98,7 @@ const CareersPage = () => {
               />
             </div>
 
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+            <div className="form-row">
               <div className="form-group">
                 <label htmlFor="email">Email Address *</label>
                 <input
@@ -133,15 +133,7 @@ const CareersPage = () => {
                 value={formData.position}
                 onChange={handleInputChange}
                 required
-                style={{
-                  width: '100%',
-                  padding: '1rem',
-                  background: 'var(--bg-secondary)',
-                  border: '1px solid var(--border-primary)',
-                  borderRadius: '8px',
-                  color: 'var(--text-primary)',
-                  fontSize: '1rem'
-                }}
+                className="form-select"
               >
                 <option value="">Select a position</option>
                 {openings.map((opening, index) => (
@@ -159,15 +151,7 @@ const CareersPage = () => {
                 value={formData.experience}
                 onChange={handleInputChange}
                 required
-                style={{
-                  width: '100%',
-                  padding: '1rem',
-                  background: 'var(--bg-secondary)',
-                  border: '1px solid var(--border-primary)',
-                  borderRadius: '8px',
-                  color: 'var(--text-primary)',
-                  fontSize: '1rem'
-                }}
+                className="form-select"
               >
                 <option value="">Select experience level</option>
                 <option value="0-1">0-1 years (Entry Level)</option>
@@ -186,15 +170,7 @@ const CareersPage = () => {
                 onChange={handleFileChange}
                 accept=".pdf,.doc,.docx"
                 required
-                style={{
-                  width: '100%',
-                  padding: '1rem',
-                  background: 'var(--bg-secondary)',
-                  border: '1px solid var(--border-primary)',
-                  borderRadius: '8px',
-                  color: 'var(--text-primary)',
-                  fontSize: '1rem'
-                }}
+                className="form-file"
               />
               <small style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>
                 Accepted formats: PDF, DOC, DOCX (Max 5MB)

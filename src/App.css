@@ -985,6 +985,56 @@ body {
   box-shadow: var(--shadow-card);
 }
 
+/* Form row for side-by-side inputs */
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 0;
+}
+
+/* Form select styling */
+.form-select {
+  width: 100%;
+  padding: 1rem;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-primary);
+  border-radius: 8px;
+  color: var(--text-primary);
+  font-size: 1rem;
+  font-family: inherit;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.form-select:focus {
+  outline: none;
+  border-color: var(--orange-primary);
+  box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.1);
+  background: var(--bg-primary);
+}
+
+/* Form file input styling */
+.form-file {
+  width: 100%;
+  padding: 1rem;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-primary);
+  border-radius: 8px;
+  color: var(--text-primary);
+  font-size: 1rem;
+  font-family: inherit;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.form-file:focus {
+  outline: none;
+  border-color: var(--orange-primary);
+  box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.1);
+  background: var(--bg-primary);
+}
+
 .contact-form h3 {
   color: var(--orange-primary);
   margin-bottom: 1.5rem;
@@ -1037,7 +1087,9 @@ body {
 /* Mobile form improvements */
 @media (hover: none) and (pointer: coarse) {
   .form-group input,
-  .form-group textarea {
+  .form-group textarea,
+  .form-select,
+  .form-file {
     font-size: 16px; /* Prevents zoom on iOS */
     padding: 1.2rem;
   }
@@ -1048,6 +1100,36 @@ body {
   
   .glass-card {
     padding: 1.5rem;
+  }
+}
+
+/* Mobile responsive form layout */
+@media (max-width: 768px) {
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  
+  .contact-form {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-form {
+    padding: 1.25rem;
+  }
+  
+  .form-group input,
+  .form-group textarea,
+  .form-select,
+  .form-file {
+    padding: 0.9rem;
+    font-size: 16px;
+  }
+  
+  .form-group label {
+    font-size: 0.95rem;
   }
 }
 
@@ -1266,10 +1348,25 @@ body {
   box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
 }
 
+/* Contact page social links styling */
+.social-links-contact-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  padding: 1rem 0;
+  flex-wrap: wrap;
+}
+
 /* Social media icons responsive improvements */
 @media (max-width: 768px) {
   .social-links-contact-page {
-    display: none !important; /* Hide social links on mobile with high specificity */
+    display: flex !important; /* Show social links on mobile */
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    padding: 1.5rem 0;
   }
   
   .social-link {
@@ -1285,10 +1382,18 @@ body {
   }
 }
 
+/* Desktop and larger screens */
 @media (min-width: 769px) {
   .social-links {
     gap: 1rem;
     justify-content: flex-start;
+  }
+  
+  .social-links-contact-page {
+    justify-content: center;
+    gap: 1.25rem;
+    margin-top: 1.5rem;
+    padding: 1rem 0;
   }
   
   .social-link {
@@ -1299,6 +1404,30 @@ body {
   .social-link svg {
     width: 20px;
     height: 20px;
+  }
+}
+
+/* Tablet screens */
+@media (min-width: 481px) and (max-width: 768px) {
+  .social-links-contact-page {
+    justify-content: center;
+    gap: 1.25rem;
+    margin-top: 1.5rem;
+    padding: 1.25rem 0;
+  }
+  
+  .social-link {
+    width: 42px;
+    height: 42px;
+  }
+}
+
+/* Small mobile screens */
+@media (max-width: 480px) {
+  .social-links-contact-page {
+    gap: 1rem;
+    margin-top: 1.5rem;
+    padding: 1.25rem 0;
   }
 }
 
@@ -1603,20 +1732,49 @@ body {
 }
 
 .project-image {
-  background: var(--bg-secondary);
   height: 200px;
+  overflow: hidden;
+  border-bottom: 1px solid var(--border-primary);
+  position: relative;
+  background: var(--bg-secondary);
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.05);
+}
+
+.project-image-placeholder {
+  width: 100%;
+  height: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  background: var(--bg-secondary);
   color: var(--text-muted);
-  font-size: 1rem;
-  border-bottom: 1px solid var(--border-primary);
   transition: all 0.3s ease;
 }
 
-.project-card:hover .project-image {
+.project-card:hover .project-image-placeholder {
   background: var(--orange-primary);
   color: var(--text-on-accent);
+}
+
+.placeholder-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.placeholder-text {
+  font-size: 0.9rem;
+  font-weight: 500;
 }
 
 .project-content {
