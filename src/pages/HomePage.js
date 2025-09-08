@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import '../App.css';
-import heroVideo from '../assets/service_video.mp4';
+import heroVideo from '../assets/Virtual_City_Animation.mp4';
 import { Link } from 'react-router-dom';
 
 // Import service images
