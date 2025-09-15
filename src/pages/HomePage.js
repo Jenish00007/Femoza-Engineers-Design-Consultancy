@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import '../App.css';
-import heroVideo from '../assets/Virtual_City_Animation.mp4';
+import heroImage from '../assets/image1.jpg';
 import { Link } from 'react-router-dom';
 
 // Import service images
@@ -60,9 +60,9 @@ const HomePage = () => {
     <main>
       {/* Hero Section */}
       <section className="hero">
-        <video className="hero-video" autoPlay muted loop playsInline preload="metadata" aria-hidden="true">
-          <source src={heroVideo} type="video/mp4" />
-        </video>
+        <div className="hero-image">
+          <img src={heroImage} alt="Construction and engineering background" />
+        </div>
         <div className="hero-content">
           <div className="hero-eyebrow">
             <span className="eyebrow-line"></span>

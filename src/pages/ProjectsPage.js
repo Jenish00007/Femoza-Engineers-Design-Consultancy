@@ -1,6 +1,6 @@
 import React from 'react';
 import '../App.css';
-import projectsVideo from '../assets/Projects.mp4';
+import projectsImage from '../assets/image3.jpg';
 import luxuryvilla from '../assets/luxury-villa-projects.png';
 import housing from '../assets/housing-projects.png';
 import mixeduse from '../assets/mixed-use-projects.png';
@@ -77,11 +77,11 @@ const ProjectsPage = () => {
 
   return (
     <main>
-      {/* Hero Section with Video Background */}
+      {/* Hero Section with Image Background */}
       <section className="hero">
-        <video className="hero-video" autoPlay muted loop playsInline preload="metadata" aria-hidden="true">
-          <source src={projectsVideo} type="video/mp4" />
-        </video>
+        <div className="hero-image">
+          <img src={projectsImage} alt="Construction projects and engineering background" />
+        </div>
         <div className="hero-content">
           <div className="hero-eyebrow">
             <span className="eyebrow-line"></span>
