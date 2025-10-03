@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import '../App.css';
-import heroImage from '../assets/image1.jpg';
+import heroVideo from '../assets/10s.mp4';
 import { Link } from 'react-router-dom';
 
 // Import service images
@@ -60,8 +60,18 @@ const HomePage = () => {
     <main>
       {/* Hero Section */}
       <section className="hero">
-        <div className="hero-image">
-          <img src={heroImage} alt="Construction and engineering background" />
+        <div className="hero-video-container">
+          <video 
+            className="hero-video" 
+            autoPlay 
+            loop 
+            muted 
+            playsInline
+          >
+            <source src={heroVideo} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <div className="hero-overlay"></div>
         </div>
         <div className="hero-content">
           <div className="hero-eyebrow">
