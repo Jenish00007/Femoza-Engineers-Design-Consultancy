@@ -1421,6 +1421,17 @@ body {
     width: 42px;
     height: 42px;
   }
+    .hero-content-service {
+  margin: 0 auto;           
+  max-width: 800px;         
+  height: 348px;            
+  display: flex;
+  flex-direction: column;   
+  justify-content: center;  
+  align-items: center;     
+  text-align: center;       
+}
+
 }
 
 /* Small mobile screens */
@@ -1858,6 +1869,11 @@ body {
   border-color: var(--orange-primary);
 }
 
+.hero-content-service {
+  margin-top: 40px;
+  margin-left: 800px;
+}
+
 /* Responsive Design - Mobile First Approach */
 @media (max-width: 1200px) {
   .nav {
@@ -1869,6 +1885,17 @@ body {
     margin-left: 100px;
     max-width: 800px;
   }
+  .hero-content-service {
+  margin: 0 auto;           
+  max-width: 800px;         
+  height: 348px;            
+  display: flex;
+  flex-direction: column;   
+  justify-content: center;  
+  align-items: center;     
+  text-align: center;       
+}
+
   
   .section {
     padding: 4rem 1.5rem;
@@ -1929,7 +1956,9 @@ body {
   }
   
   .carousel-track {
-    flex-direction: column;
+    display: flex;   
+    flex-direction: row;
+    transform: none !important;
     gap: 1.5rem;
   }
   
@@ -3426,3 +3455,5 @@ body {
     padding: 0.75rem;
   }
 }
+
+

@@ -1,20 +1,20 @@
 import React from 'react';
 import '../App.css';
-import projectsImage from '../assets/image3.jpg';
-import luxuryvilla from '../assets/luxury-villa-projects.png';
-import housing from '../assets/housing-projects.png';
-import mixeduse from '../assets/mixed-use-projects.png';
-import architecturalBim from '../assets/artitectural_bim_services.png';
-import structuralBim from '../assets/Structural BIM Services.png';
-import mepBim from '../assets/MEP BIM Services.png';
-import infraBim from '../assets/Infra BIM Services.png';
-import scanToBim from '../assets/Scan to BIM Services.png';
-import bimModeling from '../assets/BIM_MODELING_SERVICES.png';
+import projectsImage from '../assets/image5.jpeg';
+import luxuryvilla from '../assets/image12.jpeg';
+import housing from '../assets/image13.jpeg';
+import mixeduse from '../assets/image14.jpeg';
+import architecturalBim from '../assets/image7.jpeg';
+import structuralBim from '../assets/image8.jpeg';
+import mepBim from '../assets/image6.jpeg';
+import infraBim from '../assets/image11.jpeg';
+import scanToBim from '../assets/image8.jpeg';
+import bimModeling from '../assets/image9.jpeg';
 
 const ProjectsPage = () => {
   const projectCategories = [
     {
-      title: "Residential & Housing Developments",
+      title: "Commercial & Housing Developments",
       description: "We provide BIM solutions that ensure design accuracy, sustainable construction, and cost efficiency for housing projects. From luxury villas to large-scale residential complexes, our models bring clarity and detail to every phase of development.",
       projects: [
         { name: "Luxury Villa Complex", details: "High-end residential development with sustainable design features", image: luxuryvilla },
@@ -78,11 +78,12 @@ const ProjectsPage = () => {
   return (
     <main>
       {/* Hero Section with Image Background */}
-      <section className="hero">
-        <div className="hero-image">
-          <img src={projectsImage} alt="Construction projects and engineering background" />
-        </div>
-        <div className="hero-content">
+      <section className="hero" style={{ backgroundImage: `url(${projectsImage})`, height: '120vh',  backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
+        {/* <div className="hero-image">
+          <img src={projectsImage} alt="Construction projects and engineering background"
+           style={{width: '220%',   height: 'auto', objectFit: 'cover' }}/>
+        </div> */}
+        <div className="hero-content-service">
           <div className="hero-eyebrow">
             <span className="eyebrow-line"></span>
             <span>Our Projects</span>

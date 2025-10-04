@@ -6,7 +6,7 @@ import aboutUsImage from '../assets/about_us.png';
 const AboutPage = () => {
   return (
     <main>
-      <section className="hero" style={{ backgroundImage: `url(${aboutUsImage})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
+      <section className="hero" style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(${aboutUsImage})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
         <div className="hero-content">
           <div className="hero-eyebrow">
             <span className="eyebrow-line"></span>

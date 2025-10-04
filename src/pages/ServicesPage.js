@@ -1,6 +1,6 @@
 import React from 'react';
 import '../App.css';
-import servicesImage from '../assets/image2.jpg';
+import servicesImage from '../assets/image4.jpeg';
 import Cards from '../components/service-cards/five-card';
 import BIM_MODELING_SERVICES from '../assets/BIM_MODELING_SERVICES.png';
 import { FaHammer, FaBuilding, FaDraftingCompass, FaMicrochip, FaEye, FaVrCardboard } from 'react-icons/fa';
@@ -149,11 +149,12 @@ const ServicesPage = () => {
   return (
     <main>
       {/* Hero Section with Image Background */}
-      <section className="hero">
-        <div className="hero-image">
-          <img src={servicesImage} alt="Industrial and construction services background" />
-        </div>
-        <div className="hero-content">
+      <section className="hero" style={{ backgroundImage: `url(${servicesImage})`, height: '135vh',  backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }} >
+        {/* <div className="hero-image">
+          <img src={servicesImage} alt="Industrial and construction services background" 
+          style={{width: '200%', height: 'auto', objectFit: 'cover' }}/>
+        </div> */}
+        <div className="hero-content-service">
           <div className="hero-eyebrow">
             <span className="eyebrow-line"></span>
             <span>Our Services</span>

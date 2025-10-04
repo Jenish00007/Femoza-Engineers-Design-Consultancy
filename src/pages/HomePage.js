@@ -1,60 +1,68 @@
-import React, { useState, useRef } from 'react';
+// import React, { useState, useRef } from 'react';
+import React from 'react';
 import '../App.css';
 import heroVideo from '../assets/10s.mp4';
+import ServicesCarousel from '../components/ServicesCarousel';
 import { Link } from 'react-router-dom';
 
 // Import service images
-import bimModelingImg from '../assets/BIM_MODELING_SERVICES.png';
-import architecturalImg from '../assets/artitectural_bim_services.png';
-import structuralImg from '../assets/Structural BIM Services.png';
-import mepImg from '../assets/MEP BIM Services.png';
-import infraImg from '../assets/Infra BIM Services.png';
-import scanToBimImg from '../assets/Scan to BIM Services.png';
+import bimModelingImg from '../assets/image15.jpeg';
+import architecturalImg from '../assets/image13.jpeg';
+import structuralImg from '../assets/image10.jpeg';
+import mepImg from '../assets/image16.jpeg';
+import infraImg from '../assets/image17.jpeg';
+import scanToBimImg from '../assets/image12.jpeg';
+import ArchBimImg from '../assets/image11.jpeg';
 
 const HomePage = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const carouselRef = useRef(null);
+  // const [currentSlide, setCurrentSlide] = useState(0);
+  // const carouselRef = useRef(null);
 
   const services = [
     {
       image: bimModelingImg,
-      title: "BIM Modeling Services",
-      description: "Seamless 3D modeling for flawless planning and execution."
+      title: "Oil & Gas Sectors",
+      description: "Seamless 3D modeling, smarter design, safer construction, and efficient asset management for flawless planning and execution."
     },
     {
       image: architecturalImg,
-      title: "Architectural BIM Services", 
-      description: "Innovative designs that masterfully balance aesthetics with functionality."
+      title: "Petro Chemical Services", 
+      description: "Innovative designs provides efficient design, safer construction, and streamlined project management."
     },
     {
       image: structuralImg,
-      title: "Structural BIM Services",
-      description: "Reliable structural detailing for safe, efficient, and compliant builds."
+      title: "BIM in Pipeline Services",
+      description: "Pipeline Services leverages 3D digital models for accurate design and efficient construction"
     },
     {
       image: mepImg,
-      title: "MEP BIM Services",
-      description: "Integrated mechanical, electrical, and plumbing solutions for perfect coordination and clash detection."
+      title: "3D and 4D Rending Services",
+      description: "Our photo-realistic renderings delivers accurate visualizations for planning and project execution."
     },
     {
       image: infraImg,
-      title: "Infra BIM Services",
+      title: "Structural BIM Services",
       description: "Comprehensive infrastructure modeling for large-scale and public development projects."
     },
     {
       image: scanToBimImg,
-      title: "Scan to BIM Services",
+      title: "Point to Cloud Modelling Services",
       description: "Converting point cloud data into accurate BIM models for renovations and retrofits."
+    },
+     {
+      image: ArchBimImg,
+      title: "Architecutral Bim Services",
+      description: "Provides precise 3D models for efficient design and documentation."
     }
   ];
 
-  const nextSlide = () => {
-    setCurrentSlide(prev => prev >= services.length - 1 ? 0 : prev + 1);
-  };
+  // const nextSlide = () => {
+  //   setCurrentSlide(prev => prev >= services.length - 1 ? 0 : prev + 1);
+  // };
 
-  const prevSlide = () => {
-    setCurrentSlide(prev => prev <= 0 ? services.length - 1 : prev - 1);
-  };
+  // const prevSlide = () => {
+  //   setCurrentSlide(prev => prev <= 0 ? services.length - 1 : prev - 1);
+  // };
 
   return (
     <main>
@@ -116,7 +124,9 @@ const HomePage = () => {
           We provide specialized BIM solutions to meet every project demand.
         </p>
         
-        <div className="services-carousel">
+        <ServicesCarousel services={services} />
+        
+        {/* <div className="services-carousel">
           <button className="carousel-btn carousel-btn-left" onClick={prevSlide} aria-label="Previous services">←</button>
           <div className="carousel-container" ref={carouselRef}>
             <div 
@@ -125,6 +135,7 @@ const HomePage = () => {
             >
               {services.map((service, index) => (
                 <div key={index} className="feature-card carousel-card">
+                  
                   <div className="service-image">
                     <img src={service.image} alt={service.title} />
                   </div>
@@ -137,7 +148,7 @@ const HomePage = () => {
             </div>
           </div>
           <button className="carousel-btn carousel-btn-right" onClick={nextSlide} aria-label="Next services">→</button>
-        </div>
+        </div> */}
         
         <div className="text-center" style={{ marginTop: '3rem' }}>
           <Link to="/services" className="btn btn-primary">Explore All Services</Link>
