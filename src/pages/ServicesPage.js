@@ -150,11 +150,7 @@ const ServicesPage = () => {
     <main>
       {/* Hero Section with Image Background */}
       <section className="hero" style={{ backgroundImage: `url(${servicesImage})`, height: '135vh',  backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }} >
-        {/* <div className="hero-image">
-          <img src={servicesImage} alt="Industrial and construction services background" 
-          style={{width: '200%', height: 'auto', objectFit: 'cover' }}/>
-        </div> */}
-        <div className="hero-content-service">
+         <div className="hero-content-service">
           <div className="hero-eyebrow">
             <span className="eyebrow-line"></span>
             <span>Our Services</span>
