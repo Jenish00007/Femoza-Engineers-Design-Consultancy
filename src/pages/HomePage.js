@@ -56,7 +56,15 @@ const HomePage = () => {
     }
   ];
 
-    return (
+  // const nextSlide = () => {
+  //   setCurrentSlide(prev => prev >= services.length - 1 ? 0 : prev + 1);
+  // };
+
+  // const prevSlide = () => {
+  //   setCurrentSlide(prev => prev <= 0 ? services.length - 1 : prev - 1);
+  // };
+
+  return (
     <main>
       {/* Hero Section */}
       <section className="hero">
@@ -118,7 +126,30 @@ const HomePage = () => {
         
         <ServicesCarousel services={services} />
         
-              
+        {/* <div className="services-carousel">
+          <button className="carousel-btn carousel-btn-left" onClick={prevSlide} aria-label="Previous services">←</button>
+          <div className="carousel-container" ref={carouselRef}>
+            <div 
+              className="carousel-track" 
+              style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+            >
+              {services.map((service, index) => (
+                <div key={index} className="feature-card carousel-card">
+                  
+                  <div className="service-image">
+                    <img src={service.image} alt={service.title} />
+                  </div>
+                  <div className="service-content">
+                    <h3>{service.title}</h3>
+                    <p>{service.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+          <button className="carousel-btn carousel-btn-right" onClick={nextSlide} aria-label="Next services">→</button>
+        </div> */}
+        
         <div className="text-center" style={{ marginTop: '3rem' }}>
           <Link to="/services" className="btn btn-primary">Explore All Services</Link>
         </div>
